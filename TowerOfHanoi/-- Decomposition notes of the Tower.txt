@@ -1,0 +1,15 @@
+-- Decomposition notes of the Towers of Hanoi Problem -- 
+
+- All three rings must be moved from Rod A to Rod C in the same order they started in 
+- Only one rod can be moved at a time and rings can only be placed on top of rings larger than themselves
+
+-- Programming -- 
+
+- Each ring has a number 1, 2 and 3 stored in a variable n 
+- By recursively calling a function that re arranges 1 and 2 we can move 3 to C and then move 1 and 2 on top 
+
+- To do this define a function that takes 4 paramaters n: being the ring that's being moved source: the rod the ring is currently on target: the rod the ring wants to be moved to and helper: the ring that is not in use or which can be stepped on to help it move there 
+
+
+
+- Firstly the function needs to get rid of the first two rings it does this by checking if the ring is the bottom one (3) if the 
